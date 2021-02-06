@@ -4,5 +4,5 @@ const client = require('twilio')(accountSid, authToken);
 client.calls.create({
   twiml: '<Response><Say>Hello thank you for picking up</Say></Response>',
   to: process.env.MY_PHONE_NUMBER,
-  from: '+1 267 204 2695'
+  from: 'TWILIO-PHONE-NUMBER'
 }).then(call => console.log(call.sid))
