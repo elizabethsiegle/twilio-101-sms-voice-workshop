@@ -1,17 +1,15 @@
 const http = require('http');
 const express = require('express');
-const { urlencoded } = require('body-parser');
 const MessagingResponse = require('twilio').twiml.MessagingResponse;
 
 const app = express();
-app.use(urlencoded({ extended: false }));
-
-app.post('/hack', (req, res) => {
+app.use(express.urlencoded({ extended: false }));
+app.post('/femmehacks', (req, res) => {
   const twiml = new MessagingResponse();
   // Access the message body and the number it was sent from.
-  const inbMsg = req.body.Body;
-  if(inbMsg == "matcha") {
-    twiml.message('The Robots are coming! Head for the hills!');
+  const inbMsg = req.body.Body.toLowerCase().trim();
+  if(inbMsg == "thai tea") {
+    twiml.message('That is my favorite boba flavor as well!');
   }
   else {
       twiml.message("else");
@@ -23,3 +21,4 @@ app.post('/hack', (req, res) => {
 http.createServer(app).listen(1337, () => {
   console.log('Express server listening on port 1337');
 });
+
