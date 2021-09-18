@@ -9,4 +9,6 @@ This repo uses environment variables--[more info on them here](https://www.twili
 
 The Twilio Autopilot bot referenced includes [this code](https://github.com/elizabethsiegle/autopilot_build_chatbot_with_machine_learning_webinar) and is from this [webinar](https://ahoy.twilio.com/devgen_webinar_autopilot).
 
-The [Twilio Video blog post referenced](https://www.twilio.com/blog/build-a-video-app-javascript-twilio-cli-quickly)
+The [Twilio Video blog post referenced](https://www.twilio.com/blog/build-a-video-app-javascript-twilio-cli-quickly) as well as [detecting mask-wearing in a Twilio Video app](https://www.twilio.com/blog/mask-or-no-mask-twilio-video-ml-javascript)
+
+Check out [Twilio's Student Ambassador program, Field Operators](https://twilio.com/quest/fieldoperators)
